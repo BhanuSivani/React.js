@@ -1,0 +1,45 @@
+React.js:
+Create an element in react
+let a = document.createElement(‘h1’);
+a.inner.html = “ I am Bhanu”
+document.body.appendChild(a)
+console.log(a)
+<h1> Sivani </h1>
+To create a element by React.js:
+React.createElement(‘h1’)
+type=tag name(div,h1,p)
+props=classNAme,id,onClick
+to display the element
+ReactDOM.createRoot()
+ReactDOM.render()---to display the element
+Syntax:
+Reactelement-what to render
+Container = where to render
+intro to jsx
+(javascript xml) is a syntax extension for js in react js;
+it allows us to write html code in react
+it makes easier to write html in react
+JSX: JSX code gets compiled into JS
+Babel: a tool that converts/translates into js
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id ="app"></div>
+    <script type="text/babel">
+
+    const element=<h1 className="a">Hello JSX!</h1> //createin a element in JSX
+    const root =ReactDOM.createRoot(document.getElementById('app'))
+    root.render(element)
+    </script>
+</body>
+</html>
