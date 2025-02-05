@@ -1,0 +1,98 @@
+JSX:
+-abbreviated as javascript xml
+-it is a syntax extension for javascript
+-it allows to write html code in react
+-The jsx code hets compiled into js
+
+BABEL:
+-a tool that converts html code into javascript code
+-all the html tags must be closed while using this tool
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id = "app"></div>
+    <script type = "text/babel">
+        const element = <h1  ClassName = "a">Hello, JSX!</h1>
+        /*const e=document.getElementById('app')
+        const root = ReactDom.createroot(e)
+        root.render(element)*/
+        const e=document.getElementById('app')
+        const root = ReactDom.createroot(e)
+        root.render(e)
+
+    </script>
+</body>
+</html>
+
+
+
+elements
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script type = "text/babel">
+        const n=10;
+        const m =<h1>React is(n*2) Better than react JS</h1>
+        const root = ReactDom.createroot(document.getElementById("app"))
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id = "app"></div>
+    <script type = "text/babel">
+        const element = <h1  ClassName = "a">Hello, JSX!</h1>
+        const e=document.getElementById('app')
+        const root = ReactDom.createroot(e)
+        root.render(element)
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"> </div>
+    <script type="text/babel">
+        const IsloggedIn = true;
+        return(
+            <div>
+                {IsloggedIn ?}(<h1> Welcome back, user1</h1>):(<h1>please log in </h1>)
+                IsloggedIn && <h2> You have a new notification </h2>
+                create root = ReactDom.createroot(document.getElementById('app'))
+                root.render("App")
+
+            </div>
+        )
+    </script>
+
+</html>
