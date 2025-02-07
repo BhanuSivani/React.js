@@ -1,0 +1,43 @@
+Greetings.js:
+import React from "react";
+function Greeting(isLoggedIn){
+    if(isLoggedIn){
+        return <h1>Welcome Back!</h1>
+    }else{
+        return <h1>Please LogIn</h1>
+    }
+}
+export default Greeting;
+
+
+Fruitlist.js:
+import React from "react";
+const fruitlist=()=>{
+    const fruits = ['Banana','Mango','Watermelon']
+    return(
+        <div>Fruits List
+        <ul>
+            {fruits.map((fruit, index)+{
+                <li key = {index}>{fruit}</li>
+            })}
+        </ul>
+        </div>
+    )
+}
+export default fruitlist;
+
+
+App.js:
+//conditional rendering
+import React from "react";
+import Greeting from "./greeting";
+import fruitlist from "./fruitlist";
+
+function App() {
+    const isLoggedIn = true;
+    return (
+        <div className="App">
+            <Greeting isLoggedIn={isLoggedIn} />
+        </div>
+    );
+}
