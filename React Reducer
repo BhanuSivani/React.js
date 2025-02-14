@@ -1,0 +1,13 @@
+
+React Reducer()
+a reducer is a function that helps to update (like score,a list)based on   action we take
+Current State: the current value of a state
+Action: Add or remove an item
+TRACKING APPLES:                     
+
+callback in react:
+in react a call back is function that is passed as an argument to another function
+call backs are often to communicate with different components
+EX: A parent component passing as a callback to a child 
+-parent component displays a messgae; and child component has a button 
+-When the button is clicked, the child will use callback 
