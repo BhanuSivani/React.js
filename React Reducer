@@ -11,3 +11,28 @@ call backs are often to communicate with different components
 EX: A parent component passing as a callback to a child 
 -parent component displays a messgae; and child component has a button 
 -When the button is clicked, the child will use callback 
+
+import React,{useReducer} from "react";
+function appleReducer(state=3,action){
+  switch(action.type){
+    case 'ADD_APPLE':
+      return state+1;
+    case 'EAT_APPLE':
+      return state-1;
+    default:
+      return state;
+  }
+}
+
+function App(){
+  const[state,dispatch]=useReducer(appleReducer)
+  return(
+    <div>
+      <h1>Apple Counter</h1>
+      <p>Number of apples:{state}</p>
+      <button onClick={()=>dispatch({type:'ADD_APPLE'})}>Add APPLE</button>
+      <button onClick={()=>dispatch({type:'EAT_APPLE'})}>EAT APPLE</button>
+    </div>
+  )
+}
+export default App;
