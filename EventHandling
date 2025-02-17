@@ -1,0 +1,29 @@
+How to use events in react:
+use camelcase for event names
+pass a function to the event 
+Keypoints:
+Target: it is a property of the event object and is predefined by javascript for DOM events
+event.target: always refers the element that triggered the event 
+event.target.value:
+(OnKeyDown):
+key is pressed 
+/*function App(){
+  const handleClick =()=>{
+      alert("Button Clicked");
+  };
+  return(
+      <button onClick={handleClick}>CLICK ME!!</button>
+  )
+}
+export default App;*/
+
+
+/*import React,{useState} from "react";
+function App(){
+  const[text,setText]=useState=("")
+  //initally the value is iset as empty string
+  const handleChange=(event)=>{
+    setText(event.target.value)
+  }
+}
+export default App;*/
